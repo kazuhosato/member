@@ -10,13 +10,13 @@ require_once('menu.php');
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-  <title>Café Progate</title>
+  <title>Kemkow</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link href='https://fonts.googleapis.com/css?family=Pacifico|Lato' rel='stylesheet' type='text/css'>-->
 </head>
 <body>
   <div class="menu-wrapper container">
-    <h1 class="logo">Team member</h1>
+    <h1 class="logo">Team menber</h1>
     <h3 class="ava">Available <?php echo Menu::getCount() ?>人</h3>
     <form method="post" action="confirm.php">
       <div class="menu-items">
@@ -36,7 +36,7 @@ require_once('menu.php');
               <?php endfor ?>
             <?php endif ?>
             <div class=sss>
-            <p class="price">月／¥<?php echo $menu->getTaxIncludedPrice() ?>（税込）</p>
+            <p class="price">¥<?php echo $menu->getTaxIncludedPrice() ?>/月　（税込）</p>
             <input type="text" value="0" name="<?php echo $menu->getName() ?>">
             <span>ヵ月</span>
             </div>
