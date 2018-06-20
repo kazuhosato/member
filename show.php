@@ -34,27 +34,30 @@ $menuReviews = $menu->getReviews($reviews);
     <div class="review-list-wrapper">
       <div class="review-list">
         <div class="review-list-title">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/review.png" class='icon-review'>
+          <img src="rakuten.png" class='icon-review'>
           <h4 class=ssss>社内評価一覧</h4>
         </div>
         <?php foreach ($menuReviews as $review): ?>
           <?php $user = $review->getUser($users) ?>
           
           <div class="review-list-item">
-            <div class="review-user">
+            <div class=gazo>
               <?php if ($user->getGender() == 'male'): ?>
-                <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/male.png" class='icon-user'>
+                <img src="miki.jpg" class='icon-user'>
               <?php else: ?>
-                <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/female.png" class='icon-user'>
+                <img src="aa.jpg" class='icon-user'>
               <?php endif ?>
-              <p class=mm><?php echo $user->getName() ?></p>
-            </div>
-            <p class="review-text"><?php echo $review->getBody() ?></p>
-          </div>
+              </div>
+              
+              <p><?php echo $user->getName() ?></p>
+            <p><?php echo $review->getBody() ?></p>
+          
         <?php endforeach ?>
       </div>
     </div>
+    <div class=fin>
     <a href="index.php">← メニュー一覧へ</a>
+  </div>
   </div>
 </body>
 </html>

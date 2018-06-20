@@ -240,10 +240,8 @@ input[type="submit"] {
 }
 
 
-.review-list-title img, .review-list-title h4, .review-list-item img {
-  display: inline-block;
-  vertical-align: middle;
-}
+
+
 
 .icon-review {
   width: 30px;
@@ -252,11 +250,22 @@ input[type="submit"] {
 }
 
 .review-user {
-  width: 100px;
+  display: inline-block
+}
+.review-list-item {
+  width: 1000px;
+  color: #fff;
+  font-size: 20px;
+}
+.fin {
+  width: 1000px;
+  text-align: right;
+  font-size: 20px;
 }
 
-
-
+.gazo {
+  width: 50px;
+}
   
 
 .review-text {

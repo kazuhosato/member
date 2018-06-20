@@ -21,15 +21,19 @@ $user4 = new User('前園', 'male');
 $users = array($user1, $user2, $user3, $user4);
 
 // 以下の$review1 ~ $review8を削除して、userIdプロパティをセットするためのコードを貼り付けてください
-$review1 = new Review($juice->getName(), $user1->getId(), '果肉たっぷりのオレンジジュースです！');
-$review2 = new Review($curry->getName(), $user1->getId(), '具がゴロゴロしていてとてもおいしいです');
-$review3 = new Review($coffee->getName(), $user2->getId(), '香りがいいです');
+$review1 = new Review($juice->getName(), $user1->getId(), 'じゃかましいけどタイピングが早い！');
+$review2 = new Review($curry->getName(), $user1->getId(), '実は甘えん坊なんです。');
+$review3 = new Review($coffee->getName(), $user2->getId(), '声が低い。');
 $review4 = new Review($pasta->getName(), $user2->getId(), 'ソースが絶品です。また食べたい。');
-$review5 = new Review($juice->getName(), $user3->getId(), '普通のジュース');
-$review6 = new Review($curry->getName(), $user3->getId(), '値段の割においしいカレーだと思いました');
-$review7 = new Review($coffee->getName(), $user4->getId(), '苦味がちょうどよくて、おすすめです');
-$review8 = new Review($pasta->getName(), $user4->getId(), '具材にこだわりを感じました。');
+$review5 = new Review($juice->getName(), $user3->getId(), 'ジャミラ！！！');
+$review6 = new Review($curry->getName(), $user3->getId(), '犬とギターが好きなイケメン！');
+$review7 = new Review($coffee->getName(), $user4->getId(), '声が低い。');
+$review8 = new Review($pasta->getName(), $user4->getId(), '田須磨じゃなくて達真だよ！');
+$review9 = new Review($eiko->getName(), $user3->getId(), '顔だけは誰にも負けない。');
+$review10 = new Review($eiko->getName(), $user1->getId(), '彼氏より仕事優先！');
+$review11 = new Review($kazuho->getName(), $user1->getId(), 'イケメン過ぎ、大好き！');
+$review12 = new Review($kazuho->getName(), $user4->getId(), '会社で一番かしこいですね。');
 
-$reviews = array($review1, $review2, $review3, $review4, $review5, $review6, $review7, $review8);
+$reviews = array($review1, $review2, $review3, $review4, $review5, $review6, $review7, $review8, $review9, $review10, $review11, $review12);
 
 ?>
