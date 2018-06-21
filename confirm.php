@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="order-wrapper">
-    <h2>ご依頼内容確認</h2>
+    <h2>Comfirmation</h2>
     <?php $totalPayment = 0 ?>
     
     <?php foreach ($menus as $menu): ?>
@@ -27,7 +27,9 @@
       </p>
       <p class="order-price"><?php echo $menu->getTotalPrice() ?>円</p>
     <?php endforeach ?>
-    <h3>月間お支払金額: <?php echo $totalPayment ?>円</h3>
+    <h3>Totall: ¥<?php echo $totalPayment ?></h3>
   </div>
+  <div class=fin>
+    <a href="index.php">← Go Back</a>
 </body>
 </html>

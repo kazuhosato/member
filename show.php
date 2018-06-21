@@ -35,7 +35,7 @@ $menuReviews = $menu->getReviews($reviews);
       <div class="review-list">
         <div class="review-list-title">
           <img src="rakuten.png" class='icon-review'>
-          <h4 class=ssss>社内評価一覧</h4>
+          <h4 class=ssss>Evaluation</h4>
         </div>
         <?php foreach ($menuReviews as $review): ?>
           <?php $user = $review->getUser($users) ?>
@@ -56,7 +56,7 @@ $menuReviews = $menu->getReviews($reviews);
       </div>
     </div>
     <div class=fin>
-    <a href="index.php">← メニュー一覧へ</a>
+    <a href="index.php">← Go Back</a>
   </div>
   </div>
 </body>

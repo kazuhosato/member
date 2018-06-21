@@ -16,8 +16,8 @@ require_once('menu.php');
 </head>
 <body>
   <div class="menu-wrapper container">
-    <h1 class="logo">Team menber</h1>
-    <h3 class="ava">Available <?php echo Menu::getCount() ?>人</h3>
+    <h1 class="logo">Team Member</h1>
+    <h3 class="ava">Available <?php echo Menu::getCount() ?>people</h3>
     <form method="post" action="confirm.php">
       <div class="menu-items">
         <?php foreach ($menus as $menu): ?>
@@ -43,7 +43,7 @@ require_once('menu.php');
           </div>
         <?php endforeach ?>
       </div>
-      <input type="submit" value="依頼する">
+      <input type="submit" value="Order">
     </form>
   </div>
 </body>
